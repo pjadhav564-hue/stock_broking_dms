@@ -1,8 +1,13 @@
-# stock_broking_dms
+# 📊 STOCK BROKER DATABASE SYSTEM
 
-**Name:** PRATIK YASHWANT JADHAV 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+💼 Real-Time Trading Database System  
+⚙️ Built with PostgreSQL  
+📈 Efficient Stock & Portfolio Management  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
 
-## Tool Used: PostgreSQL 
+👤 **Developed By:** Pratik Yashwant Jadhav  
+🛠️ **Technology Used:** PostgreSQL
 
 
 ## 📌 Introduction

@@ -202,6 +202,10 @@ The function uses:
 
 ---
 
+
+
+
+
 ### ⚡ Trigger Definition
 
 The trigger is defined as:
@@ -231,6 +235,12 @@ The audit logging system ensures that every database operation is recorded for:
 - Compliance and auditing  
 
 ---
+
+
+
+
+
+
 
 ### 🧩 Table Description
 
@@ -286,6 +296,10 @@ The table uses JSONB format to store complete row data:
 
 ---
 
+
+
+
+
 ### 🎯 Benefits
 
 - Complete history of all changes  
@@ -298,7 +312,10 @@ The table uses JSONB format to store complete row data:
 ### 💡 Summary
 
 The audit_logs table provides a reliable mechanism to monitor and record all database changes, ensuring data integrity and traceability across the system.
-  
+
+
+
+
 ## Overview
 
 
@@ -450,14 +467,6 @@ The database system works efficiently by:
 
 
 
-
-
-
-
-
-### 💡 Conclusion
-
-The output confirms that the Stock Broking Database System is functioning correctly with proper data flow, automated processes, and reliable audit logging.
 
 
 

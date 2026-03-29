@@ -94,11 +94,15 @@ It acts as the central container for all related tables and ensures structured d
 
 
 
-## 🧩  Database Schema
+### 🧩  Database Schema
 
 The database schema consists of five main tables designed to manage stock broking operations efficiently.
 
 ---
+
+
+
+
 
 ### 📦 1. stocks_details
 Stores master data of all listed stocks/companies.
@@ -165,7 +169,7 @@ Stores logs of all database changes using triggers.
 - `ip_address`, `device_info`, `browser_info`
 - `created_at`
 
----
+--- 
 
 ### 🔗 Relationships
 
@@ -173,6 +177,49 @@ Stores logs of all database changes using triggers.
 - One client → Many transactions (`client_details → transactions_details`)
 - One stock → Many transactions (`stocks_details → transactions_details`)
 - One transaction → Many audit logs (`transactions_details → audit_logs`)
+
+
+
+
+
+##  Screenshots
+
+
+<img width="1704" height="492" alt="image" src="https://github.com/user-attachments/assets/fe4b5070-5bb9-4b5e-b0c9-10d1475c4cfb" />
+<img width="1846" height="298" alt="image" src="https://github.com/user-attachments/assets/0fd7645a-5beb-40f2-bfed-3d348d67b554" />
+
+
+
+
+
+<img width="1457" height="681" alt="image" src="https://github.com/user-attachments/assets/608a3fcc-6753-4ea3-af0b-7c96f3d723aa" />
+<img width="1713" height="262" alt="image" src="https://github.com/user-attachments/assets/43b230dc-9ac1-49a1-b7a5-a95975beaa8b" />
+
+
+
+
+
+
+<img width="1558" height="541" alt="image" src="https://github.com/user-attachments/assets/6c6970e7-cae4-4bbf-82dd-f385f3590537" />
+<img width="1736" height="274" alt="image" src="https://github.com/user-attachments/assets/0e45895b-2c87-4788-bf36-edc24773a4db" />
+
+
+
+
+
+
+<img width="1213" height="722" alt="image" src="https://github.com/user-attachments/assets/01a45a70-854d-4983-a5fa-96363d949546" />
+<img width="1854" height="230" alt="image" src="https://github.com/user-attachments/assets/d90b18ea-f17a-446f-a06c-eb1c2e3a889c" />
+
+
+
+
+
+<img width="1398" height="632" alt="image" src="https://github.com/user-attachments/assets/724c7681-6736-4f35-be16-01c6c30da28a" />
+<img width="1819" height="512" alt="image" src="https://github.com/user-attachments/assets/b23e742a-bd81-477a-a48c-52a8ea7ba075" />
+<img width="817" height="541" alt="image" src="https://github.com/user-attachments/assets/9bba0358-d326-4b8c-b06c-39ef83afe47c" />
+
+
 
 
 ## ⚙️  Trigger Implementation
@@ -192,7 +239,7 @@ This provides:
 
 ---
 
-### 🔄 Trigger Function
+## 🔄 Trigger Function
 
 A PL/pgSQL function (`audit_trigger_fun`) is created to handle different types of operations:
 
@@ -324,10 +371,9 @@ The audit_logs table provides a reliable mechanism to monitor and record all dat
 ## Overview
 
 
-
-
-
 Designed a scalable stock trading database system in PostgreSQL featuring transaction management, audit logging with JSONB, and automated calculations using generated columns. The system simulates a real-world trading environment with a focus on data integrity, automation, and traceability.
+
+
 
 
 ## 🚀 Features
@@ -473,26 +519,6 @@ The database system works efficiently by:
 
 
 
-
-
-##  Screenshots
-
-
-<img width="1704" height="492" alt="image" src="https://github.com/user-attachments/assets/fe4b5070-5bb9-4b5e-b0c9-10d1475c4cfb" />
-<img width="1846" height="298" alt="image" src="https://github.com/user-attachments/assets/0fd7645a-5beb-40f2-bfed-3d348d67b554" />
-
-<img width="1457" height="681" alt="image" src="https://github.com/user-attachments/assets/608a3fcc-6753-4ea3-af0b-7c96f3d723aa" />
-<img width="1713" height="262" alt="image" src="https://github.com/user-attachments/assets/43b230dc-9ac1-49a1-b7a5-a95975beaa8b" />
-
-<img width="1558" height="541" alt="image" src="https://github.com/user-attachments/assets/6c6970e7-cae4-4bbf-82dd-f385f3590537" />
-<img width="1736" height="274" alt="image" src="https://github.com/user-attachments/assets/0e45895b-2c87-4788-bf36-edc24773a4db" />
-
-<img width="1213" height="722" alt="image" src="https://github.com/user-attachments/assets/01a45a70-854d-4983-a5fa-96363d949546" />
-<img width="1854" height="230" alt="image" src="https://github.com/user-attachments/assets/d90b18ea-f17a-446f-a06c-eb1c2e3a889c" />
-
-<img width="1398" height="632" alt="image" src="https://github.com/user-attachments/assets/724c7681-6736-4f35-be16-01c6c30da28a" />
-<img width="1819" height="512" alt="image" src="https://github.com/user-attachments/assets/b23e742a-bd81-477a-a48c-52a8ea7ba075" />
-<img width="817" height="541" alt="image" src="https://github.com/user-attachments/assets/9bba0358-d326-4b8c-b06c-39ef83afe47c" />
 
 
 
